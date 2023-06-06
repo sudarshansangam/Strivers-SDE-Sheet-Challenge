@@ -26,3 +26,19 @@ def findMajorityElement(arr, n):
 		if arr.count(i) > (n/2):
 			return i
 	return -1
+
+# ANOTHER SOLUTION:
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        voter = nums[0]
+        votecount=1
+        for i in range(1,len(nums)):
+            if voter==nums[i]:
+                votecount+=1
+            else:
+                votecount-=1
+            if votecount==0:
+                voter=nums[i]
+                votecount=1
+        return voter
