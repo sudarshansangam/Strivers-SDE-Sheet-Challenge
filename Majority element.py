@@ -27,6 +27,25 @@ def findMajorityElement(arr, n):
 			return i
 	return -1
 
+# USING DICTIONARY:
+
+def findMajorityElement(arr, n):
+	# Write your code here.
+	# for i in arr:
+	# 	if arr.count(i) > (n/2):
+	# 		return i
+	count = {}
+	for i in arr:
+		if i in count:
+			count[i] += 1
+		else:
+			count[i] = 1
+	
+	for i in count:
+		if count[i] > (n/2):
+			return i
+	return -1
+
 # ANOTHER SOLUTION:
 
 class Solution:
