@@ -69,6 +69,7 @@ def slidingWindowMaximum(nums:list, k:int):
 	# Write your code here
 	# Return a list
 	res = []
+	a = 0
 	
 	deq = nums[:k]
 	res.append(max(deq))
