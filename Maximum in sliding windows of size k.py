@@ -53,6 +53,7 @@ def slidingWindowMaximum(nums:list, k:int):
 
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+	
         if len(nums) * k == 0:
             return []
         
