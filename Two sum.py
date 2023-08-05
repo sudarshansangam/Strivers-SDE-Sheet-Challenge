@@ -1,4 +1,16 @@
+Given an array of integers arr and an integer target, return the pairs that sum up to the target given 
 
+Example 1
+Input: arr = 2 7 11 13, target = 9
+Output: (2,7)
+
+Example 2
+Input: arr = 1 -1 -1 2 2, target = 1
+Output: (-1,2), (-1,2)
+
+Example 3
+Input: arr = 1 -1 -1 2 2, target = 10
+Output: (-1,-1)
 
 # SOLUTION
 
