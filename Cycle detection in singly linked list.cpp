@@ -52,6 +52,7 @@ bool detectCycle(Node *head)
 {
 	//	Write your code here
     Node* slow = head, *fast = head;
+    
     while((fast != NULL)&&(fast->next != NULL)){
         fast = fast->next;
         if(fast != NULL){
